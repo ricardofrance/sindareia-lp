@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento Sindicato - [Nome do Sindicato]</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>[Nome do Evento]</h1>
+            <p>Um encontro essencial para a categoria.</p>
+            <p class="event-date-location">
+                <span>Data: [DD/MM/AAAA]</span> | <span>Local: [Nome do Local, Cidade/Estado]</span>
+            </p>
+            <a href="#inscricao" class="btn-cta">Inscreva-se Agora!</a>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="#sobre">Sobre</a>
+            <a href="#programacao">Programação</a>
+            <a href="#inscricao">Inscrição</a>
+            <a href="#localizacao">Localização</a>
+        </div>
+    </nav>
+
+    <main>
+        <section id="sobre" class="section">
+            <div class="container">
+                <h2>Sobre o Evento</h2>
+                <p>Este evento é uma iniciativa do [Nome do Sindicato] para [breve descrição do propósito do evento, ex: discutir os desafios e oportunidades para a nossa categoria em meio às mudanças do mercado de trabalho]. Teremos palestras com especialistas, debates e workshops interativos, buscando fortalecer a união e o conhecimento de nossos membros.</p>
+                <p>Nossa missão é [mencionar a missão do sindicato ou do evento, ex: capacitar os profissionais, defender os direitos e promover um ambiente de trabalho justo e equitativo para todos]. Participe e contribua para o futuro da nossa classe!</p>
+            </div>
+        </section>
+
+        <section id="programacao" class="section bg-light-gray">
+            <div class="container">
+                <h2>Programação</h2>
+                <div class="schedule-item">
+                    <h3>[HH:MM] - Abertura e Boas-Vindas</h3>
+                    <p>Com: [Nome do Presidente/Diretor do Sindicato]</p>
+                </div>
+                <div class="schedule-item">
+                    <h3>[HH:MM] - Palestra Magna: "[Título da Palestra 1]"</h3>
+                    <p>Com: [Nome do Palestrante 1] - [Breve descrição do Palestrante 1]</p>
+                </div>
+                <div class="schedule-item">
+                    <h3>[HH:MM] - Painel de Discussão: "[Título do Painel]"</h3>
+                    <p>Com: [Nome do Participante 1], [Nome do Participante 2] - [Breve descrição do Painel]</p>
+                </div>
+                <div class="schedule-item">
+                    <h3>[HH:MM] - Coffee Break / Networking</h3>
+                </div>
+                <div class="schedule-item">
+                    <h3>[HH:MM] - Workshop: "[Título do Workshop]"</h3>
+                    <p>Com: [Nome do Facilitador] - [Breve descrição do Workshop]</p>
+                </div>
+                <div class="schedule-item">
+                    <h3>[HH:MM] - Encerramento e Próximos Passos</h3>
+                    <p>Com: [Nome do Responsável pelo Encerramento]</p>
+                </div>
+                <p class="note">*A programação pode sofrer alterações.</p>
+            </div>
+        </section>
+
+        <section id="inscricao" class="section">
+            <div class="container">
+                <h2>Garanta Sua Vaga!</h2>
+                <p>Preencha o formulário abaixo para se inscrever no evento. As vagas são limitadas!</p>
+                <form id="registration-form">
+                    <div class="form-group">
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone">
+                    </div>
+                    <div class="form-group">
+                        <label for="categoria">Categoria Profissional (Opcional):</label>
+                        <input type="text" id="categoria" name="categoria">
+                    </div>
+                    <button type="submit" class="btn-submit">Confirmar Inscrição</button>
+                </form>
+                <div id="form-message" class="hidden"></div>
+            </div>
+        </section>
+
+        <section id="localizacao" class="section bg-light-gray">
+            <div class="container">
+                <h2>Como Chegar</h2>
+                <p>O evento será realizado em:</p>
+                <address>
+                    <strong>[Nome do Local do Evento]</strong><br>
+                    [Endereço Completo do Local]<br>
+                    [Cidade], [Estado], [CEP]<br>
+                </address>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.577931086055!2d-47.0601833!3d-22.905664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8c7f2d5c2d3b5%3A0x6a5f5f5f5f5f5f5f!2s[Nome%20do%20Local%20do%20Evento]!5e0!3m2!1spt-BR!2sbr!4v1678912345678" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <p class="public-transport">Sugestão de transporte público: [informações sobre linhas de ônibus, metrô, etc. se aplicável].</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 [Nome do Sindicato]. Todos os direitos reservados.</p>
+            <p>Contato: <a href="mailto:contato@[seusindicato.com.br]">contato@[seusindicato.com.br]</a> | Telefone: [Seu Telefone]</p>
+            <div class="social-links">
+                <a href="[Link do Facebook do Sindicato]" target="_blank">Facebook</a>
+                <a href="[Link do Instagram do Sindicato]" target="_blank">Instagram</a>
+                <a href="[Link do LinkedIn do Sindicato]" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
