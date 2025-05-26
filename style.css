@@ -47,7 +47,7 @@ a:hover {
 
 /* Header - Hero Section */
 .hero {
-    background: url('https://via.placeholder.com/1500x500/0056b3/ffffff?text=Banner+do+Evento+Sindicato') no-repeat center center/cover;
+    background: url('/imagens/sindareia_banner_workshop.jpg') no-repeat center center/cover;
     color: var(--white-color);
     text-align: center;
     padding: 100px 20px;
