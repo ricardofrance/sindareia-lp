@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0.5em;
     color: var(--dark-gray);
 }
-
+h2
 p {
     margin-bottom: 1em;
 }
@@ -47,7 +47,7 @@ a:hover {
 
 /* Header - Hero Section */
 .hero {
-    background: url('imagens/sindareia_banner_workshop.jpg') no-repeat center center/cover;
+    background: url('imagens/sindareia_banner_workshop_v3.jpg') no-repeat center center/cover;
     color: var(--white-color);
     text-align: center;
     padding: 100px 20px;
@@ -73,6 +73,11 @@ a:hover {
 
 .hero h1 {
     font-size: 3.5em;
+    margin-bottom: 15px;
+    color: var(--white-color);
+}
+.hero h2 {
+    font-size: 2em;
     margin-bottom: 15px;
     color: var(--white-color);
 }
@@ -105,7 +110,7 @@ a:hover {
 }
 
 .btn-cta:hover, .btn-submit:hover {
-    background-color: #218838; /* Tom mais escuro do verde */
+    background-color: #3f1d14; /* Tom mais escuro do verde */
     text-decoration: none;
 }
 
@@ -406,4 +411,7 @@ footer a:hover {
     max-width:50%;
     float: left;
     margin-right: 3em;
+}
+.logofooter {
+    max-height: 50px;
 }
