@@ -47,7 +47,7 @@ a:hover {
 
 /* Header - Hero Section */
 .hero {
-    background: url('imagens/workshop_video_sindareia.mp4') no-repeat center center/cover;
+    background: url('imagens/porto-areia.jpeg') no-repeat bottom center/cover;
     color: var(--white-color);
     text-align: center;
     padding: 100px 20px;
@@ -414,4 +414,103 @@ footer a:hover {
 }
 .logofooter {
     max-height: 50px;
+}
+.center-text {
+    text-align: center;
+}
+
+/*Cards*/
+.benefits-section {
+  padding: 60px 20px; /* Espaçamento interno */
+  background-color: #f9f9f9; /* Cor de fundo suave */
+  text-align: center; /* Centraliza o texto do título */
+}
+
+.benefits-section h2 {
+  font-size: 2.5em; /* Tamanho do título */
+  color: #333; /* Cor do título */
+  margin-bottom: 40px; /* Espaçamento abaixo do título */
+}
+
+.benefits-container {
+  display: flex; /* Habilita o Flexbox */
+  flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha em telas menores */
+  justify-content: center; /* Centraliza os cards horizontalmente */
+  gap: 30px; /* Espaço entre os cards */
+  max-width: 1200px; /* Largura máxima do container */
+  margin: 0 auto; /* Centraliza o container na página */
+}
+
+.benefit-card {
+  background-color: #ffffff; /* Fundo branco para os cards */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil para profundidade */
+  padding: 30px; /* Espaçamento interno do card */
+  flex: 1 1 300px; /* Flex-grow, flex-shrink, flex-basis */
+  min-width: 280px; /* Largura mínima para o card */
+  max-width: 380px; /* Largura máxima para o card */
+  text-align: left; /* Alinha o texto à esquerda dentro do card */
+  transition: transform 0.3s ease; /* Efeito de transição ao passar o mouse */
+}
+
+.benefit-card:hover {
+  transform: translateY(-10px); /* Levanta o card um pouco ao passar o mouse */
+}
+
+.benefit-card h3 {
+  font-size: 1.8em; /* Tamanho do título do card */
+  color: var(--accent-color); /* Cor do título do card (azul) */
+  margin-bottom: 15px; /* Espaçamento abaixo do título do card */
+}
+
+.benefit-card p {
+  font-size: 1.1em; /* Tamanho do parágrafo do card */
+  color: #555; /* Cor do texto do parágrafo */
+  line-height: 1.6; /* Altura da linha para melhor leitura */
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 992px) {
+  .benefits-container {
+    gap: 20px; /* Reduz o espaçamento entre os cards */
+  }
+
+  .benefit-card {
+    flex: 1 1 45%; /* Em telas médias, 2 cards por linha */
+    max-width: 48%; /* Garante que caibam dois cards */
+  }
+}
+
+@media (max-width: 768px) {
+  .benefits-section h2 {
+    font-size: 2em; /* Reduz o tamanho do título em telas menores */
+  }
+
+  .benefit-card {
+    flex: 1 1 90%; /* Em telas pequenas, 1 card por linha */
+    max-width: 90%; /* Ocupa quase toda a largura disponível */
+  }
+}
+
+@media (max-width: 480px) {
+  .benefits-section {
+    padding: 40px 15px; /* Reduz o padding em telas muito pequenas */
+  }
+
+  .benefits-section h2 {
+    font-size: 1.8em;
+    margin-bottom: 30px;
+  }
+
+  .benefit-card {
+    padding: 25px; /* Reduz o padding do card */
+  }
+
+  .benefit-card h3 {
+    font-size: 1.6em;
+  }
+
+  .benefit-card p {
+    font-size: 1em;
+  }
 }
