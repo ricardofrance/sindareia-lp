@@ -47,7 +47,7 @@ a:hover {
 
 /* Header - Hero Section */
 .hero {
-    background: url('imagens/porto-areia.jpeg') no-repeat bottom center/cover;
+    background: url('imagens/porto-areia_hero_sindareia.jpeg') no-repeat bottom center/cover;
     color: var(--white-color);
     text-align: center;
     padding: 100px 20px;
@@ -69,6 +69,9 @@ a:hover {
     z-index: 2;
     max-width: 800px;
     margin: 0 auto;
+    text-align: right;
+    border-right: 4px solid var(--white-color);
+    padding-right: 20px;
 }
 
 .hero h1 {
@@ -357,7 +360,7 @@ footer a:hover {
         padding: 20px;
     }
     .endereco {
-        with:100%;
+        width:100%;
     }
     .map-container {
         width: 100%;
@@ -400,7 +403,7 @@ footer a:hover {
         padding: 6px 12px;
     }
     .endereco {
-        with:100%;
+        width:100%;
     }
 }
 
@@ -459,7 +462,7 @@ footer a:hover {
 
 .benefit-card h3 {
   font-size: 1.8em; /* Tamanho do título do card */
-  color: var(--accent-color); /* Cor do título do card (azul) */
+  color: var(--primary-color); /* Cor do título do card (azul) */
   margin-bottom: 15px; /* Espaçamento abaixo do título do card */
 }
 
@@ -513,4 +516,54 @@ footer a:hover {
   .benefit-card p {
     font-size: 1em;
   }
+}
+
+/* Adicione ao seu style.css */
+.icon-cards-section {
+  padding: 40px 0;
+  background: #f7f7f7;
+}
+.icon-cards-container {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.icon-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  padding: 32px 24px 24px 24px;
+  text-align: center;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icon-card-icon img {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 16px;
+}
+.icon-card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.section-title-card{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--dark-gray);
+    width: 100%;
+}
+#faleconosco {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 40px;
 }
