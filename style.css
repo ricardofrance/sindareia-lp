@@ -10,9 +10,9 @@ body {
 
 /* Cores e Variáveis */
 :root {
-    --primary-color: #c1b083; /* Azul mais escuro, institucional */
-    --secondary-color: #d7c49f; /* Azul padrão */
-    --accent-color: #674f39; /* Verde para CTA */
+    --primary-color: #c1b083; 
+    --secondary-color: #d7c49f; 
+    --accent-color: #674f39; 
     --light-gray: #f8f9fa;
     --dark-gray: #343a40;
     --text-color: #333;
@@ -334,6 +334,9 @@ footer a:hover {
 
 /* Responsividade */
 @media (max-width: 768px) {
+    .hero {
+    background: url('imagens/hero_768.png') no-repeat bottom center/cover;
+    }
     .hero h1 {
         font-size: 2.5em;
     }
@@ -425,7 +428,7 @@ footer a:hover {
 /*Cards*/
 .benefits-section {
   padding: 60px 20px; /* Espaçamento interno */
-  background-color: #f9f9f9; /* Cor de fundo suave */
+  background-color: #f7f1e7; /* Cor de fundo suave */
   text-align: center; /* Centraliza o texto do título */
 }
 
