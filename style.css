@@ -368,6 +368,15 @@ footer a:hover {
     .map-container {
         width: 100%;
     }
+    .logofooter{
+        margin: 0 auto;
+        max-width: 450px;
+        display: block;
+    }
+    .logofooter img {
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 @media (max-width: 480px) {
@@ -407,6 +416,11 @@ footer a:hover {
     }
     .endereco {
         width:100%;
+    }
+    .logofooter{
+        margin: 0 auto
+        max-width: 450px;
+        display: block;
     }
 }
 
