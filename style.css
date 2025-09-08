@@ -199,7 +199,7 @@ a:hover {
     margin-top: 30px;
 }
 
-/* Formulário de Inscrição */
+/* Formulário de Inscrição 
 #registration-form {
     background-color: var(--white-color);
     padding: 30px;
@@ -228,7 +228,7 @@ a:hover {
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 1em;
-    box-sizing: border-box; /* Garante que padding não aumente a largura */
+    box-sizing: border-box; /* Garante que padding não aumente a largura 
 }
 
 #form-message {
@@ -254,7 +254,16 @@ a:hover {
 .hidden {
     display: none;
 }
+*/
 
+/* Fomulário incorporado */
+#inscricao iframe{
+    width: 640px;
+    margin: 0 auto;
+    display: block;
+    height: 1450px;
+
+}
 
 /* Localização */
 address {
