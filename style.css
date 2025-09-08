@@ -427,10 +427,10 @@ footer a:hover {
         width:100%;
     }
     .logofooter{
-        margin: 0 auto
-        max-width: 450px;
-        display: block;
-    }
+            margin: 0 auto;
+            max-width: 450px;
+            display: block;
+        }
 }
 
 
