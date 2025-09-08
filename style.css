@@ -191,6 +191,18 @@ a:hover {
     font-size: 0.95em;
     color: #555;
 }
+.schedule-item .minibio {
+    font-size:0.8em;
+    color:#888;
+    font-style: italic;
+    line-height: 1.2;
+    margin: 0 0 5px 0;
+    padding-bottom: 2px;
+}
+.schedule-item .palestrantes {
+    margin: 0;
+}
+
 
 .note {
     text-align: center;
@@ -261,7 +273,7 @@ a:hover {
     width: 100%;
     margin: 0 auto;
     display: block;
-    height: 1450px;
+    height: 1510px;
     border: 0;
 
 }
