@@ -258,10 +258,11 @@ a:hover {
 
 /* Fomulário incorporado */
 #inscricao iframe{
-    width: 640px;
+    width: 100%;
     margin: 0 auto;
     display: block;
     height: 1450px;
+    border: 0;
 
 }
 
@@ -341,7 +342,7 @@ footer a:hover {
     text-decoration: none;
 }
 
-/* Responsividade */
+/* Media Queries para Responsividade */
 @media (max-width: 768px) {
     .hero {
     background: url('imagens/hero_768.png') no-repeat bottom center/cover;
@@ -386,6 +387,14 @@ footer a:hover {
         max-width: 100%;
         height: auto;
     }
+    .benefits-section h2 {
+    font-size: 2em; /* Reduz o tamanho do título em telas menores */
+  }
+
+  .benefit-card {
+    flex: 1 1 90%; /* Em telas pequenas, 1 card por linha */
+    max-width: 90%; /* Ocupa quase toda a largura disponível */
+  }
 }
 
 @media (max-width: 480px) {
@@ -431,8 +440,34 @@ footer a:hover {
             max-width: 450px;
             display: block;
         }
-}
+    .benefits-section {
+    padding: 40px 15px; /* Reduz o padding em telas muito pequenas */
+  }
 
+  .benefits-section h2 {
+    font-size: 1.8em;
+    margin-bottom: 30px;
+  }
+
+  .benefit-card {
+    padding: 25px; /* Reduz o padding do card */
+  }
+
+  .benefit-card h3 {
+    font-size: 1.6em;
+  }
+
+  .benefit-card p {
+    font-size: 1em;
+  }
+  #inscricao iframe{
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    height: 1450px;
+
+}
+}
 
 /*personalizado*/
 
@@ -498,7 +533,6 @@ footer a:hover {
   line-height: 1.6; /* Altura da linha para melhor leitura */
 }
 
-/* Media Queries para Responsividade */
 @media (max-width: 992px) {
   .benefits-container {
     gap: 20px; /* Reduz o espaçamento entre os cards */
@@ -510,41 +544,7 @@ footer a:hover {
   }
 }
 
-@media (max-width: 768px) {
-  .benefits-section h2 {
-    font-size: 2em; /* Reduz o tamanho do título em telas menores */
-  }
-
-  .benefit-card {
-    flex: 1 1 90%; /* Em telas pequenas, 1 card por linha */
-    max-width: 90%; /* Ocupa quase toda a largura disponível */
-  }
-}
-
-@media (max-width: 480px) {
-  .benefits-section {
-    padding: 40px 15px; /* Reduz o padding em telas muito pequenas */
-  }
-
-  .benefits-section h2 {
-    font-size: 1.8em;
-    margin-bottom: 30px;
-  }
-
-  .benefit-card {
-    padding: 25px; /* Reduz o padding do card */
-  }
-
-  .benefit-card h3 {
-    font-size: 1.6em;
-  }
-
-  .benefit-card p {
-    font-size: 1em;
-  }
-}
-
-/* Adicione ao seu style.css */
+/* Personalização CSS */
 .icon-cards-section {
   padding: 40px 0;
   background: #f7f7f7;
